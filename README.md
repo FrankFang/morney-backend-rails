@@ -1,12 +1,12 @@
 # README
 
 请全局搜索 your_domain.com，将其替换为你的域名
-请全局搜索 your_project_name，将其替换为你的项目名
+请全局搜索 westore，将其替换为你的项目名
 做完之后，删除这三行文字
 
 ## 数据库
 
-* 打开数据库：`docker run -v /path/to/your_project_name-data:/var/lib/postgresql/data -p 5432:5432 -e POSTGRES_USER=your_project_name -d postgres:12.2`
+* 打开数据库：`docker run -v /path/to/westore-data:/var/lib/postgresql/data -p 5432:5432 -e POSTGRES_USER=westore -d postgres:12.2`
 * 运行 `bin/rails db:create db:migrate` 获得 db/schema.rb
 
 ## 测试
